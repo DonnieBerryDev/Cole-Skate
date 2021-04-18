@@ -1,0 +1,114 @@
+#hero {
+  position: relative;
+  width: 100%;
+  background-image: url(../images/background_image_dark.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: rem(80) 0 rem(224) 0;
+  .wave-zindex {
+    @media only screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    height: 100vh;
+  }
+}
+
+.hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  &_logo1 {
+    height: rem(220);
+    margin-bottom: rem(27);
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+  &_logo2 {
+    height: rem(83);
+    color: red;
+    margin-bottom: rem(34);
+    img {
+      color: red;
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+  &_header {
+    margin-bottom: rem(20);
+  }
+  &_sub {
+    margin-bottom: rem(54);
+    max-width: 58%;
+    @media only screen and (max-width: 1024px) {
+      max-width: 100%;
+    }
+  }
+}
+
+.wave {
+  position: relative;
+  margin-top: 0;
+  bottom: 0px;
+}
+
+.custom-shape-divider-bottom-1618615970 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1618615970 svg {
+  position: relative;
+  display: block;
+  width: calc(136% + 1.3px);
+  height: 327px;
+}
+
+.custom-shape-divider-bottom-1618615970 .shape-fill {
+  fill: #ffffff;
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+  z-index: -1;
+}
+
+.wave-top {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+svg {
+  display: block;
+}
+
+#interview {
+  background: $swoosh;
+  position: relative;
+  z-index: 2;
+}
+
+#Layer_1 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.wave-zindex {
+  @extend .wave;
+  z-index: 0;
+}

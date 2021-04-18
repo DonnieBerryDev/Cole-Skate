@@ -1,0 +1,81 @@
+#sidenav {
+  position: fixed;
+  z-index: 1000;
+  right: -36vw;
+  height: 100%;
+  width: 35vw;
+  background: $text;
+  padding: rem(40);
+  transition: 0.3s all ease-in-out;
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+    right: -100vw;
+  }
+
+  @media only screen and (min-width: 1921px) {
+    width: 50vw;
+    right: -50vw;
+  }
+}
+
+.sidenav {
+  height: 100%;
+  &_logo {
+    height: 21.25%;
+    img {
+      height: rem(30);
+    }
+  }
+
+  &_nav {
+    height: 57.5%;
+    ul {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      @media only screen and (max-width: 390px) {
+        flex-direction: row !important;
+      }
+      li {
+        &:not(:last-child) {
+          @media only screen and (max-width: 390px) {
+            border-right: 0;
+            margin-bottom: rem(25);
+          }
+        }
+        a {
+          font-family: "Poppins", sans-serif;
+          font-size: rem(37);
+          font-weight: 800;
+          color: $highlight;
+          letter-spacing: 2.2px;
+          text-transform: uppercase;
+          margin: 0;
+          text-decoration: none;
+          transition: 0.3s all ease-in-out;
+          &:hover {
+            color: $title;
+            transition: 0.3s all ease-in-out;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &_info {
+    height: 21.25%;
+    margin-top: auto;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.active-nav {
+  right: 0vw !important;
+  transition: 0.3s all ease-in-out;
+}

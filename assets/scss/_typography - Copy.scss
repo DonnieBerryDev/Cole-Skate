@@ -1,0 +1,115 @@
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: rem(44);
+  font-weight: 800;
+  color: $title;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: rem(22);
+  font-weight: 200;
+  color: $highlight;
+  letter-spacing: 1.1px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: rem(22);
+  font-weight: 900;
+  line-height: 33px;
+  color: $title;
+  letter-spacing: 1.65px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: rem(17);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $text;
+  letter-spacing: 0.85px;
+  line-height: 23px;
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: rem(17);
+  color: $text;
+  letter-spacing: 0.85px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: rem(17);
+  font-weight: 600;
+  color: $text;
+  letter-spacing: 0.85px;
+  line-height: 23px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-family: "Open Sans", sans-serif;
+}
+
+.fa-star {
+  position: relative;
+}
+
+.far-hide {
+  position: absolute;
+  opacity: 0;
+  scale: 0.5;
+}
+
+.fade-in-stars {
+  opacity: 1;
+  scale: 1;
+  transition: 0.3s all ease;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.rainbow {
+  animation: colorRotate 2s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}

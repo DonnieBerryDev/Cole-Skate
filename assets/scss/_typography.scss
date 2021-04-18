@@ -1,0 +1,127 @@
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: rem(44);
+  font-weight: 900;
+  color: $title;
+  letter-spacing: 2.2px;
+  line-height: rem(65);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: rem(37);
+  font-weight: 900;
+  color: $title;
+  text-transform: uppercase;
+  letter-spacing: 2.775px;
+  line-height: rem(56);
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: rem(22);
+  font-weight: 900;
+  line-height: rem(33);
+  color: $title;
+  letter-spacing: 1.65px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: rem(17);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $text;
+  letter-spacing: 0.85px;
+  line-height: 23px;
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: rem(17);
+  color: $text;
+  letter-spacing: 0.85px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: rem(17);
+  font-weight: 400;
+  color: $text;
+  letter-spacing: 0.85px;
+  line-height: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-family: "Open Sans", sans-serif;
+}
+
+.intro-para {
+  text-transform: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: rem(22);
+  color: $highlight;
+  letter-spacing: 1.1px;
+  line-height: rem(30);
+}
+
+.fa-star {
+  position: relative;
+}
+
+.far-hide {
+  position: absolute;
+  opacity: 0;
+  scale: 0.5;
+}
+
+.fade-in-stars {
+  opacity: 1;
+  scale: 1;
+  transition: 0.3s all ease;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.rainbow {
+  animation: colorRotate 2s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}

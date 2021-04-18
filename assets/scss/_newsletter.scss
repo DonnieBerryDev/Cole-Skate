@@ -1,0 +1,96 @@
+#newsletter {
+  background: $text;
+  .flex-5050 {
+    padding: rem(80) 0;
+    align-items: stretch;
+    position: relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .left-side {
+      width: 50%;
+      max-height: 100%;
+      @media only screen and (max-width: 991px) {
+        display: none;
+      }
+
+      display: block;
+      .newsletter_img {
+        position: absolute;
+        display: block;
+        left: 0;
+        bottom: rem(70);
+        animation: jumping 2s;
+        animation-iteration-count: infinite;
+
+        &:hover {
+          bottom: 0;
+          animation-play-state: paused;
+          cursor: pointer;
+        }
+
+        img {
+          max-width: 100%;
+          max-height: rem(450);
+          margin: 0;
+          padding: 0;
+          display: block;
+        }
+      }
+    }
+    .right-side {
+      width: 50%;
+      padding-left: rem(25);
+      @media only screen and (max-width: 991px) {
+        width: 100%;
+        padding-left: 0;
+      }
+      .newsletter {
+        &_title {
+          margin-bottom: rem(20);
+          h5 {
+            color: $highlight;
+            font-weight: 400;
+          }
+        }
+        &_header {
+          margin-bottom: rem(20);
+          h3 {
+            font-size: rem(37);
+          }
+        }
+        &_sub {
+          margin-bottom: rem(40);
+          h4 {
+            color: $highlight;
+            text-transform: none;
+            font-size: rem(22);
+            line-height: 30px;
+            letter-spacing: 1.1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes jumping {
+  from {
+    bottom: rem(70);
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    bottom: rem(100);
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    bottom: rem(70);
+    transform: rotate(0deg);
+  }
+}

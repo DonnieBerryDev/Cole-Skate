@@ -1,0 +1,125 @@
+@mixin container-base {
+  margin: 0 auto;
+  padding: 0 40px;
+  @media only screen and (max-width: 610px) {
+    padding: 0 20px;
+  }
+}
+
+.container {
+  @include container-base;
+  &-main {
+    @extend .container;
+    max-width: 1070px;
+  }
+
+  &-stretch {
+    @extend .container;
+    width: 100%;
+    max-width: 1400px;
+  }
+}
+
+.flex-5050 {
+  display: flex;
+  z-index: 99;
+  @media only screen and (max-width: 780px) {
+    flex-direction: column;
+    width: 100%;
+  }
+  &:not(:last-child) {
+    margin-bottom: rem(166);
+    @media only screen and (max-width: 991px) {
+      margin-bottom: rem(100);
+    }
+  }
+
+  &:last-child {
+    margin-bottom: rem(150);
+  }
+  .left-side {
+    width: 50%;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media only screen and (max-width: 780px) {
+      width: 100%;
+      margin-bottom: rem(25);
+    }
+    &_header {
+      margin-bottom: rem(20);
+      @media only screen and (max-width: 991px) {
+        text-align: center;
+      }
+    }
+
+    &_sub {
+      max-width: 99%;
+      margin-bottom: rem(23);
+      @media only screen and (max-width: 991px) {
+        text-align: center;
+      }
+    }
+
+    &_cta {
+      @media only screen and (max-width: 991px) {
+        text-align: center;
+      }
+    }
+  }
+  .right-side {
+    width: 50%;
+    display: block;
+    @media only screen and (max-width: 780px) {
+      width: 100%;
+    }
+    &_img {
+      text-align: right;
+      height: rem(370);
+      filter: drop-shadow(5px 15px 30px #00000029);
+      @media only screen and (max-width: 780px) {
+        width: 100%;
+        height: rem(600);
+        margin: 0 auto;
+      }
+
+      @media only screen and (max-width: 780px) {
+        width: 75vw;
+        height: 75vw;
+      }
+      img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        max-width: rem(370);
+        object-fit: cover;
+        object-position: bottom;
+        box-shadow: 5px 15px 30px #00000029;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 84%, 83% 100%, 0% 100%);
+        @media only screen and (max-width: 780px) {
+          width: 100%;
+          max-width: 100%;
+          object-position: bottom;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+div.flex-5050:nth-child(even) {
+  .left-side {
+    order: 1;
+    @media only screen and (max-width: 780px) {
+      order: 0;
+    }
+  }
+
+  .right-side {
+    order: 0;
+    &_img {
+      text-align: left;
+    }
+  }
+}

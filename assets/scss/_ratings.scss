@@ -1,0 +1,32 @@
+#reviews {
+  margin-bottom: rem(180);
+  .review {
+    &_header {
+      text-align: center;
+      margin-bottom: rem(30);
+    }
+    &_sub {
+      text-align: center;
+    }
+  }
+  .stars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: rem(40);
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        &:not(:last-child) {
+          margin-right: rem(26);
+        }
+        i {
+          font-size: 3rem;
+          color: $title;
+        }
+      }
+    }
+  }
+}

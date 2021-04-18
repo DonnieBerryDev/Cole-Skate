@@ -1,0 +1,89 @@
+footer {
+  ul {
+    @media only screen and (max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+
+  li {
+    &:not(:last-child) {
+      @media only screen and (max-width: 991px) {
+        margin-bottom: rem(15);
+      }
+    }
+  }
+  background: $title;
+  padding: rem(35) 0;
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media only screen and (max-width: 991px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    @media only screen and (max-width: 460px) {
+      flex-direction: column;
+    }
+    &_links {
+      @media only screen and (max-width: 991px) {
+        margin-bottom: rem(25);
+      }
+
+      li {
+        &:not(:last-child) {
+          border-right: 1px solid $text;
+          @media only screen and (max-width: 991px) {
+            border-right: 0;
+          }
+        }
+        a {
+          color: $text;
+          font-size: rem(17);
+          letter-spacing: 0.85px;
+          font-weight: 400;
+        }
+      }
+    }
+    &_logo {
+      @media only screen and (max-width: 991px) {
+        margin-bottom: rem(25);
+      }
+      img {
+        max-height: rem(70);
+      }
+    }
+
+    &_contact {
+      @media only screen and (max-width: 991px) {
+        margin-bottom: rem(25);
+      }
+
+      li {
+        @media only screen and (max-width: 991px) {
+          text-align: right;
+          margin-right: 0;
+          padding-right: 0 !important;
+          @media only screen and (max-width: 460px) {
+            text-align: left;
+          }
+        }
+        &:not(:last-child) {
+          border-right: 1px solid $text;
+          @media only screen and (max-width: 991px) {
+            border-right: 0;
+          }
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          color: $text;
+          font-size: rem(17);
+        }
+      }
+    }
+  }
+}
