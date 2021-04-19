@@ -7,6 +7,9 @@ h1 {
   line-height: rem(65);
   text-transform: uppercase;
   margin: 0;
+  @media only screen and (max-width: 610px) {
+    font-size: rem(40);
+  }
 }
 
 h2 {

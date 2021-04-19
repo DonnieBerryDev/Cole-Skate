@@ -6,6 +6,9 @@
   background-position: center;
   background-size: cover;
   padding: rem(80) 0 rem(224) 0;
+  @media only screen and (max-width: 610px) {
+    background-attachment: unset;
+  }
   .wave-zindex {
     @media only screen and (max-width: 1024px) {
       display: none;
@@ -13,6 +16,7 @@
   }
   @media only screen and (max-width: 1024px) {
     height: 100vh;
+    padding: 0;
   }
 }
 

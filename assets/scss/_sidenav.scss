@@ -38,7 +38,7 @@
       padding: 0;
       margin: 0;
       @media only screen and (max-width: 390px) {
-        flex-direction: row !important;
+        flex-direction: column !important;
       }
       li {
         &:not(:last-child) {
@@ -72,6 +72,17 @@
     margin-top: auto;
     display: flex;
     align-items: flex-end;
+    ul {
+      @media only screen and (max-width: 390px) {
+        flex-direction: column;
+      }
+      li {
+        @media only screen and (max-width: 390px) {
+          border-right: 0 !important;
+          margin-bottom: rem(10);
+        }
+      }
+    }
   }
 }
 

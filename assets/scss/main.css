@@ -22,7 +22,7 @@ body {
 }
 
 .disable-scroll {
-  overflow-y: hidden !important;
+  overflow: hidden !important;
 }
 
 #black-overlay {
@@ -70,6 +70,12 @@ h1 {
   line-height: 4.0625rem;
   text-transform: uppercase;
   margin: 0;
+}
+
+@media only screen and (max-width: 610px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 }
 
 h2 {
@@ -295,7 +301,7 @@ a {
   margin-bottom: 1.25rem;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 780px) {
   .flex-5050 .left-side_header {
     text-align: center;
   }
@@ -306,13 +312,13 @@ a {
   margin-bottom: 1.4375rem;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 780px) {
   .flex-5050 .left-side_sub {
     text-align: center;
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 780px) {
   .flex-5050 .left-side_cta {
     text-align: center;
   }
@@ -437,15 +443,14 @@ nav {
   width: 50px;
   z-index: 999999;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0;
 }
 
 .nav_hamburger:hover {
@@ -480,6 +485,15 @@ nav {
   stroke: #d1898b;
 }
 
+#hamburger-closed,
+#hamburger-open {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 .hamburger-closed {
   display: none;
 }
@@ -494,6 +508,12 @@ nav {
   padding: 5rem 0 14rem 0;
 }
 
+@media only screen and (max-width: 610px) {
+  #hero {
+    background-attachment: unset;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   #hero .wave-zindex {
     display: none;
@@ -503,6 +523,7 @@ nav {
 @media only screen and (max-width: 1024px) {
   #hero {
     height: 100vh;
+    padding: 0;
   }
 }
 
@@ -699,6 +720,16 @@ svg {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  position: relative;
+  left: 0px;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.hyperlink:hover {
+  left: 10px;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
 }
 
 #products {
@@ -944,10 +975,10 @@ svg {
 
 @media only screen and (max-width: 390px) {
   .sidenav_nav ul {
-    -webkit-box-orient: horizontal !important;
+    -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
   }
 }
 
@@ -987,6 +1018,22 @@ svg {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media only screen and (max-width: 390px) {
+  .sidenav_info ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .sidenav_info ul li {
+    border-right: 0 !important;
+    margin-bottom: 0.625rem;
+  }
 }
 
 .active-nav {

@@ -49,7 +49,7 @@
     }
     &_header {
       margin-bottom: rem(20);
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: 780px) {
         text-align: center;
       }
     }
@@ -57,13 +57,13 @@
     &_sub {
       max-width: 99%;
       margin-bottom: rem(23);
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: 780px) {
         text-align: center;
       }
     }
 
     &_cta {
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: 780px) {
         text-align: center;
       }
     }

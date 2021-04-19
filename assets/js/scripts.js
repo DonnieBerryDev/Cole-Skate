@@ -42,8 +42,10 @@ hamburger.addEventListener("click", function () {
 
 // Parallax effect on hero
 window.addEventListener("scroll", function () {
-  let offset = window.pageYOffset
-  hero.style.backgroundPositionY = -offset * 0.4 + "px"
+  if (!mobileView.matches) {
+    let offset = window.pageYOffset
+    hero.style.backgroundPositionY = -offset * 0.4 + "px"
+  }
 })
 
 // Apply active navbar styling
@@ -83,3 +85,5 @@ window.addEventListener("scroll", checkStars)
 
 // On scroll, run checkNav function to apply active navbar styling
 window.addEventListener("scroll", checkNav)
+
+var mobileView = window.matchMedia("(max-width: 610px)")
