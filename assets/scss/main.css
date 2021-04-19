@@ -6,6 +6,7 @@
 html,
 body {
   font-size: 16px;
+  height: 100%;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -102,7 +103,7 @@ h3 {
   font-family: "Poppins", sans-serif;
   font-size: 1.375rem;
   font-weight: 900;
-  line-height: 2.625rem;
+  line-height: 2.0625rem;
   color: #d1898b;
   letter-spacing: 1.65px;
   text-transform: uppercase;
@@ -171,65 +172,6 @@ a {
   scale: 1;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
-}
-
-@-webkit-keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.rainbow {
-  -webkit-animation: colorRotate 2s linear 0s infinite;
-          animation: colorRotate 2s linear 0s infinite;
-}
-
-@-webkit-keyframes colorRotate {
-  from {
-    color: #6666ff;
-  }
-  10% {
-    color: #0099ff;
-  }
-  50% {
-    color: #00ff00;
-  }
-  75% {
-    color: #ff3399;
-  }
-  100% {
-    color: #6666ff;
-  }
-}
-
-@keyframes colorRotate {
-  from {
-    color: #6666ff;
-  }
-  10% {
-    color: #0099ff;
-  }
-  50% {
-    color: #00ff00;
-  }
-  75% {
-    color: #ff3399;
-  }
-  100% {
-    color: #6666ff;
-  }
 }
 
 .container, .container-main, .container-stretch {
@@ -532,14 +474,14 @@ nav {
 
 @media only screen and (max-width: 1024px) {
   #hero {
-    height: 100vh;
+    height: 100%;
     padding: 0;
   }
 }
 
 @media only screen and (min-width: 1921px) {
   #hero {
-    height: 85vh;
+    height: 85%;
   }
 }
 
@@ -768,6 +710,12 @@ svg {
   padding: 4.375rem 0 11.25rem 0;
 }
 
+@media only screen and (max-width: 610px) {
+  #products {
+    padding-bottom: 9.375rem;
+  }
+}
+
 #products a:hover .products_selection_box_img {
   top: -15px;
   -webkit-transition: 0.3s all ease-in-out;
@@ -986,6 +934,12 @@ svg {
   height: 21.25%;
 }
 
+@media only screen and (min-width: 991px) {
+  .sidenav_logo {
+    margin-top: 10px;
+  }
+}
+
 .sidenav_logo img {
   height: 1.875rem;
 }
@@ -1088,6 +1042,12 @@ svg {
 
 #reviews {
   margin-bottom: 11.25rem;
+}
+
+@media only screen and (max-width: 610px) {
+  #reviews {
+    margin-bottom: 6.25rem !important;
+  }
 }
 
 #reviews .review_header {
@@ -1450,6 +1410,24 @@ footer .footer_contact li a {
     bottom: 4.375rem;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */
