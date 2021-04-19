@@ -53,7 +53,6 @@ window.addEventListener("scroll", function () {
 checkNav = () => {
   if (window.scrollY > 1 && !sidenav.classList.contains("active-nav")) {
     navbar.classList.add("active-navbar")
-    console.log("RUN")
   } else {
     navbar.classList.remove("active-navbar")
   }
