@@ -21,10 +21,20 @@
       li {
         &:not(:last-child) {
           margin-right: rem(26);
+          @media only screen and (max-width: 610px) {
+            margin-right: rem(13);
+          }
         }
         i {
           font-size: 3rem;
           color: $title;
+          @media only screen and (max-width: 610px) {
+            font-size: 2.5rem;
+          }
+
+          @media only screen and (max-width: 280px) {
+            font-size: 2rem;
+          }
         }
       }
     }

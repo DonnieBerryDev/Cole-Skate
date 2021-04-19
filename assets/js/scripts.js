@@ -16,6 +16,7 @@ blackOverlay.addEventListener("click", function () {
   sidenav.classList.remove("active-nav")
   mainLogo.classList.remove("opacity-0")
   blackOverlay.classList.remove("active-overlay")
+  // document.documentElement.classList.remove("disable-scroll")
   document.body.classList.remove("disable-scroll")
   hamburgerClosed.classList.remove("hamburger-closed")
   hamburgerOpen.classList.add("hamburger-closed")
@@ -26,6 +27,7 @@ hamburger.addEventListener("click", function () {
   sidenav.classList.toggle("active-nav")
   mainLogo.classList.toggle("opacity-0")
   blackOverlay.classList.toggle("active-overlay")
+  // document.documentElement.classList.toggle("disable-scroll")
   document.body.classList.toggle("disable-scroll")
   navbar.classList.remove("active-navbar")
 

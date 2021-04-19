@@ -3,10 +3,12 @@
   width: 100%;
   background-image: url(../images/background_image_dark.jpeg);
   background-attachment: fixed;
-  background-position: center;
+  background-position-y: 0;
+
   background-size: cover;
   padding: rem(80) 0 rem(224) 0;
   @media only screen and (max-width: 610px) {
+    background-position: center;
     background-attachment: unset;
   }
   .wave-zindex {
@@ -17,6 +19,10 @@
   @media only screen and (max-width: 1024px) {
     height: 100vh;
     padding: 0;
+  }
+
+  @media only screen and (min-width: 1921px) {
+    height: 85vh;
   }
 }
 
@@ -33,6 +39,10 @@
     animation: jumping 2s;
     animation-iteration-count: infinite;
     @media only screen and (max-width: 610px) {
+      display: none;
+    }
+
+    @media only screen and (max-height: 610px) {
       display: none;
     }
     img {
