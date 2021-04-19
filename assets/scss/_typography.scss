@@ -10,6 +10,11 @@ h1 {
   @media only screen and (max-width: 610px) {
     font-size: rem(40);
   }
+
+  @media only screen and (max-width: 372px) {
+    font-size: rem(30);
+    line-height: rem(35);
+  }
 }
 
 h2 {
@@ -28,7 +33,7 @@ h3 {
   font-family: "Poppins", sans-serif;
   font-size: rem(22);
   font-weight: 900;
-  line-height: rem(33);
+  line-height: rem(42);
   color: $title;
   letter-spacing: 1.65px;
   text-transform: uppercase;

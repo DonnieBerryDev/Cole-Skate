@@ -7,6 +7,9 @@
   background: $text;
   padding: rem(40);
   transition: 0.3s all ease-in-out;
+  @media only screen and (max-width: 610px) {
+    padding: rem(20);
+  }
   @media only screen and (max-width: 1024px) {
     width: 100%;
     right: -100vw;
@@ -57,6 +60,9 @@
           margin: 0;
           text-decoration: none;
           transition: 0.3s all ease-in-out;
+          @media only screen and (max-width: 610px) {
+            font-size: rem(32);
+          }
           &:hover {
             color: $title;
             transition: 0.3s all ease-in-out;

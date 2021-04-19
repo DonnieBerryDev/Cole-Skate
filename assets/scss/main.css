@@ -78,6 +78,13 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 372px) {
+  h1 {
+    font-size: 1.875rem;
+    line-height: 2.1875rem;
+  }
+}
+
 h2 {
   font-family: "Poppins", sans-serif;
   font-size: 2.3125rem;
@@ -94,7 +101,7 @@ h3 {
   font-family: "Poppins", sans-serif;
   font-size: 1.375rem;
   font-weight: 900;
-  line-height: 2.0625rem;
+  line-height: 2.625rem;
   color: #d1898b;
   letter-spacing: 1.65px;
   text-transform: uppercase;
@@ -936,6 +943,12 @@ svg {
   transition: 0.3s all ease-in-out;
 }
 
+@media only screen and (max-width: 610px) {
+  #sidenav {
+    padding: 1.25rem;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   #sidenav {
     width: 100%;
@@ -1010,6 +1023,12 @@ svg {
   text-decoration: none;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
+}
+
+@media only screen and (max-width: 610px) {
+  .sidenav_nav ul li a {
+    font-size: 2rem;
+  }
 }
 
 .sidenav_nav ul li a:hover {
