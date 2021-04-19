@@ -548,6 +548,16 @@ nav {
 .hero_logo1 {
   height: 13.75rem;
   margin-bottom: 1.6875rem;
+  -webkit-animation: jumping 2s;
+          animation: jumping 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@media only screen and (max-width: 610px) {
+  .hero_logo1 {
+    display: none;
+  }
 }
 
 .hero_logo1 img {
@@ -1183,58 +1193,6 @@ svg {
   letter-spacing: 1.1px;
 }
 
-@-webkit-keyframes jumping {
-  from {
-    bottom: 4.375rem;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  25% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-  50% {
-    bottom: 6.25rem;
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
-  }
-  75% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-  100% {
-    bottom: 4.375rem;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-@keyframes jumping {
-  from {
-    bottom: 4.375rem;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  25% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-  50% {
-    bottom: 6.25rem;
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
-  }
-  75% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-  100% {
-    bottom: 4.375rem;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
 ul.style1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1389,5 +1347,57 @@ footer .footer_contact li:last-child {
 footer .footer_contact li a {
   color: #1c1c1c;
   font-size: 1.0625rem;
+}
+
+@-webkit-keyframes jumping {
+  from {
+    bottom: 4.375rem;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    bottom: 6.25rem;
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  75% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    bottom: 4.375rem;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes jumping {
+  from {
+    bottom: 4.375rem;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    bottom: 6.25rem;
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  75% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    bottom: 4.375rem;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -17,7 +17,6 @@ blackOverlay.addEventListener("click", function () {
   mainLogo.classList.remove("opacity-0")
   blackOverlay.classList.remove("active-overlay")
   document.body.classList.remove("disable-scroll")
-
   hamburgerClosed.classList.remove("hamburger-closed")
   hamburgerOpen.classList.add("hamburger-closed")
 })
@@ -86,4 +85,5 @@ window.addEventListener("scroll", checkStars)
 // On scroll, run checkNav function to apply active navbar styling
 window.addEventListener("scroll", checkNav)
 
+// Declaring mobile view for responsiveness
 var mobileView = window.matchMedia("(max-width: 610px)")

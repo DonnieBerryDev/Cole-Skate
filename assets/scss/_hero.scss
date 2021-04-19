@@ -30,6 +30,11 @@
   &_logo1 {
     height: rem(220);
     margin-bottom: rem(27);
+    animation: jumping 2s;
+    animation-iteration-count: infinite;
+    @media only screen and (max-width: 610px) {
+      display: none;
+    }
     img {
       max-height: 100%;
       max-width: 100%;
