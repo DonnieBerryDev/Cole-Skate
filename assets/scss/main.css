@@ -494,6 +494,7 @@ nav {
 
 #hamburger-closed,
 #hamburger-open {
+  height: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
